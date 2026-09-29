@@ -6,7 +6,7 @@ A small Android app that locks this phone when a timer ends. The timer is an exa
 
 Push this repo to GitHub. The **Build APK** action runs on that push, and you can also start it from the Actions tab.
 
-When the run is green, open it and download `time-machine.apk`. On the phone, allow install from your browser or file app, then open the APK. The build is signed with the debug key, so Android will install it.
+When the run is green, it publishes a release. Open the Releases page and download `time-machine.apk`. On the phone, allow install from your browser or file app, then open the APK. The build is signed with the debug key, so Android will install it.
 
 ## Run
 
