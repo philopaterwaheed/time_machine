@@ -19,7 +19,7 @@ import timemachine.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val handler = Handler(Looper.getMainLooper())
-    private val tick = Runnable {
+    private val tick: Runnable = Runnable {
         val lockAt = LockScheduler.lockAtMillis(this)
         if (lockAt != null && lockAt <= System.currentTimeMillis()) {
             LockScheduler.ensureArmed(this)
